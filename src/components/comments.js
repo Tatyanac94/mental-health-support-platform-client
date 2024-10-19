@@ -53,8 +53,6 @@ const Comments = ({ postId, existingComments }) => {
             setError('Failed to add comment. Please try again.');
         }
     };
-    
-
 
     useEffect(() => {
         setComments(existingComments || []);
@@ -70,7 +68,7 @@ const Comments = ({ postId, existingComments }) => {
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                     placeholder="Your name (optional)"
-                     className="border border-blue-500 rounded p-2 mb-2 w-full"
+                    className="border border-blue-500 rounded p-2 mb-2 w-full"
                 />
                 <textarea
                     value={newComment}
@@ -82,7 +80,7 @@ const Comments = ({ postId, existingComments }) => {
             </form>
             <ul className="mt-4">
                 {comments.map((comment) => (
-                    <li key={comment.id}>
+                    <li key={comment.id || comment.timestamp}>
                         <p>{comment.username || 'Anonymous'}: {comment.content} <small>{formatDate(comment.timestamp)}</small></p>
                         <hr className="border-t border-blue-500 my-2" />
                     </li>
