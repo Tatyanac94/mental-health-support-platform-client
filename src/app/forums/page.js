@@ -22,7 +22,7 @@ const ForumsPage = () => {
     }, []);
 
     const handleForumCreated = (newForum) => {
-        setForums((prevForums) => [newForum, ...prevForums]); // Add new forum to the top
+        setForums((prevForums) => [newForum, ...prevForums]); 
     };
 
     return (

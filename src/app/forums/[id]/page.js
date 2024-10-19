@@ -36,7 +36,10 @@ const ForumDetailPage = () => {
             <h2 className="text-2xl mb-4">{forum.name}</h2>
             <p>{forum.description}</p>
             <h3 className="text-xl mt-4">Create a new post:</h3>
-            <CreatePost onPostCreated={handlePostCreated} /> 
+            <CreatePost 
+                onPostCreated={handlePostCreated} 
+                forumId={id} 
+            /> 
             <h3 className="text-xl mt-4">Posts:</h3>
             <PostList forumId={id} />
         </div>
@@ -44,3 +47,10 @@ const ForumDetailPage = () => {
 };
 
 export default ForumDetailPage;
+
+
+
+
+
+
+

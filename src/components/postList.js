@@ -14,8 +14,8 @@ const PostList = ({ forumId }) => {
             setIsLoading(true);
             try {
                 const response = await axios.get(`/forums/${forumId}/posts`);
-                console.log('Posts response:', response.data); // Log the response
-                setPosts(response.data); // Adjust if response.data is nested
+                console.log('Posts response:', response.data); 
+                setPosts(response.data); 
             } catch (error) {
                 console.error("Error fetching posts:", error);
                 setError(error);
@@ -27,7 +27,7 @@ const PostList = ({ forumId }) => {
         if (forumId) {
             fetchPosts();
         }
-    }, [forumId]); // Only re-run when forumId changes
+    }, [forumId]); 
 
     if (isLoading) return <div>Loading...</div>;
     if (error) return <div>Error fetching posts: {error.message}</div>;
@@ -46,3 +46,4 @@ const PostList = ({ forumId }) => {
 };
 
 export default PostList;
+
