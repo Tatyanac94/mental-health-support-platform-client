@@ -52,17 +52,3 @@ const PostDetail = ({ postId }) => {
 };
 
 export default PostDetail;
-
-
-
-
-
-
-
-
-
-
-
-
-
-

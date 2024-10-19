@@ -7,10 +7,26 @@ const ForumItem = ({ forum }) => {
             <h3 className="font-bold text-black underline">{forum.name}</h3>
             <p className="text-black">{forum.description}</p>
             <Link href={`/forums/${forum.id}`}>
-                <a className="mt-2 text-blue-500 hover:underline">View Posts</a>
+                <button className="mt-2 text-blue-500">View Posts</button>
             </Link>
         </div>
     );
 };
 
 export default ForumItem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

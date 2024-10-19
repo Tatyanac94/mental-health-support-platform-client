@@ -45,7 +45,6 @@
 
 import { useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
-import Likes from '../components/likes';
 
 const PostDetail = ({ params }) => {
   const { id } = params;
@@ -72,7 +71,6 @@ const PostDetail = ({ params }) => {
   return (
     <div>
       <h2>{post.content}</h2>
-      <Likes postId={post.id} />
     </div>
   );
 };
