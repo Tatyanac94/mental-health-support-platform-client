@@ -1,37 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mental Health Support Platform
 
-## Getting Started
+## Author: Tatyana Cuttino
 
-First, run the development server:
+## Description
+
+The Mental Health Support Platform is a user-friendly application designed to provide a safe space for individuals to express their thoughts, share experiences, and seek support. Our mission is to foster a genuine sense of community where users can connect through posts, comments, and interactions that reflect the importance of mental well-being. Unlike traditional platforms, all contributions are permanent, promoting authenticity and encouraging users to engage thoughtfully.
+
+At the heart of our platform is the belief that every voice matters. Users can participate anonymously, allowing for candid discussions about mental health without the pressure of identification.
+
+## How to Run
+
+Clone the repository: <https://github.com/Tatyanac94/mental-health-support-platform-client.git>
+
+Navigate to the project directory:
+
+```bash
+cd [project-directory]
+```
+
+## Installation Command
+
+Install dependencies using the following command:
+
+```bash
+npm install
+```
+
+## Set Up Environmental Variables
+
+Create a `.env.local` file in the root directory of the project:
+
+```plaintext
+NEXT_PUBLIC_API_URL=https://mental-health-support-platform-server.vercel.app/api
+```
+
+## Run the Server
+
+For production:
+
+```bash
+npm start
+```
+
+For development with auto-reloading:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and navigate to <http://localhost:3000> to see the app in action.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Support Quiz**: A guided quiz to help users identify their support category, making it easier for them to find relevant forums and discussions.
+- **Mental Health Resources**: A dedicated resource page featuring hyperlinks to trusted mental health organizations, providing users with easy access to additional support and information.
+- **Forums for Discussion**: A structured forum page where users can add posts and comments, creating a collaborative environment for sharing experiences and advice.
+- **Permanent Interactions**: Users cannot edit or delete posts, comments, or likes, promoting authenticity and ensuring that all interactions are final.
+- **User-Friendly Interface**: Enjoy an intuitive design for seamless navigation and interaction.
+- **Anonymous Participation**: Choose to remain anonymous if users prefer not to disclose their identity.
+- **Real-Time Updates**: Experience dynamic engagement with posts, comments, and likes updated in real-time, enhancing user interaction.
 
-## Learn More
+## Technologies and Resources Used
 
-To learn more about Next.js, take a look at the following resources:
+- [Mental Health Platform Server](https://mental-health-support-platform-server.vercel.app/): The backend service hosted at deployed-snacks-project.vercel.app, serving as a database of snacks listed in JSON format. ([GitHub Repository](https://github.com/Tatyanac94/mental-health-support-platform-server.git)).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- React: A JavaScript library for building user interfaces.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Tailwind CSS: A utility-first CSS framework for styling.
 
-## Deploy on Vercel
+- Axios: HTTP client for making requests to the backend API.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Vercel: Deployment platform for serverless functions and static sites.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# mental-health-support-platform-client
+- JavaScript: Programming language used for client-side logic.
+
+- Local Storage: Used for storing user preferences such as theme settings.
