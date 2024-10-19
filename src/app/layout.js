@@ -35,8 +35,8 @@ export default function RootLayout({ children }) {
                     </nav>
                 </header>
                 <main className="p-4">{children}</main>
-                <footer className="bg-gray-200 p-4 text-center">
-                    <p>&copy; {new Date().getFullYear()} Mental Health Support Platform</p>
+                <footer className="p-4 text-center bg-blue-500">
+                    <p>&copy; {new Date().getFullYear()} TC - Mental Health Support Platform - Module 4</p>
                 </footer>
             </body>
         </html>
