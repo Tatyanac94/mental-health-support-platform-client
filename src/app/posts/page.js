@@ -53,7 +53,7 @@
 
 
 
-
+"use client"
 
 import React, { useState } from 'react';
 import PostList from '../../components/postList';
